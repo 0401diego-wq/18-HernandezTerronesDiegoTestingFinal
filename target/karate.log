@@ -1,0 +1,36 @@
+20:18:56.699 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @crearSolo
+20:18:57.612 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:18:58.912 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:18:59.337 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.18)
+1 > Accept-Encoding: gzip,deflate
+{"id":1386,"name":"KevinDog","status":"available"}
+
+20:19:00.990 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1609
+1 < 200
+1 < Date: Sun, 22 Feb 2026 01:19:02 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":1386,"name":"KevinDog","photoUrls":[],"tags":[],"status":"available"}
+
+20:19:00.996 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "id": 1386,
+  "name": "KevinDog",
+  "photoUrls": [
+  ],
+  "tags": [
+  ],
+  "status": "available"
+}
+ 
+20:19:01.767 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
