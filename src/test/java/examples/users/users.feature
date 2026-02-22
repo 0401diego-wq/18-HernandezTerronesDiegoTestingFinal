@@ -13,7 +13,7 @@ Feature: Automatizar el backend de Pet Store
     When method post
     Then status 200
     And match response.id == 14
-    And match response.name == 'Max'
+    And match response.name == 'Max'git
     And match response.status == 'available'
     * def idPet = response.id
 
