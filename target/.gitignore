@@ -1,0 +1,14 @@
+# Maven
+target/
+*.log
+
+# IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Karate
+karate-reports/
+karate-summary.html
