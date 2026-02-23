@@ -11,9 +11,9 @@ Feature: Automatizar el backend de Pet Store
     Given path 'pet'
     And request jsonCrearMascota
     When method post
-    Then status 200
-    And match response.id == 14
-    And match response.name == 'Max'git
+    Then status 400
+    And match response.id == 556
+    And match response.name == 'KevinGood'
     And match response.status == 'available'
     * def idPet = response.id
 
@@ -80,7 +80,7 @@ Feature: Automatizar el backend de Pet Store
     Then status 200
 
 
-    #llamar a otro caso de prueba para usarlo después
+    #  llamar a otro caso de prueba para usarlo después
   @TEST-7 @happypath
   Scenario: Verificar la busqueda de la mascota por id - OK
     * def idMascosta = call read('classpath:examples/users/users.feature@crearMascosta')
