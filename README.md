@@ -15,9 +15,9 @@ La organizacion de los archivos sigue el estandar de Karate DSL para asegurar el
 src/test/java/
 └── examples/
 ├── store/
-│   └── store.feature (Automatizacion de inventarios y ordenes)
+│   └── store.feature
 └── usertarea/
-└── usertarea.feature (Automatizacion de gestion de usuarios)
+└── usertarea.feature
 
 src/test/resources/data/
 ├── store/
